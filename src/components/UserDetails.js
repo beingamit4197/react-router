@@ -1,9 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 export const UserDetails = () => {
-  return (
+  const { userId } = useParams();
+    return (
     <div>
-        <h3>Details about user</h3>
+        <h3>Details about user { userId }</h3>
     </div>
   )
 }
